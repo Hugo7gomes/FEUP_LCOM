@@ -1,0 +1,198 @@
+\hypertarget{uart1_8c}{}\doxysection{libs/uart/src/uart1.c File Reference}
+\label{uart1_8c}\index{libs/uart/src/uart1.c@{libs/uart/src/uart1.c}}
+{\ttfamily \#include \char`\"{}libs/uart/include/uart1.\+h\char`\"{}}\newline
+Include dependency graph for uart1.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{uart1_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{uart1_8c_aa12b7563cba242a7eefc7f1c74cd7483}{uart\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes uart interrupts \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{uart1_8c_a1cb30315f505aa8c7dfaee157e4c0733}{uart\+\_\+unsubscribe\+\_\+int}} (void)
+\begin{DoxyCompactList}\small\item\em unsubcribes uart interrupts \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{uart1_8c_a2e6ab7377be0fd52e7cb7b7ec8dee859}{uart\+\_\+read}} (uint32\+\_\+t base, uint32\+\_\+t port, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Reads from uart port and saves it in data variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{uart1_8c_a3f13867a2fd6446839995ea8841b8c5c}{uart\+\_\+write}} (uint32\+\_\+t base, uint32\+\_\+t port, uint32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes data variable to uart port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{uart1_8c_a4a9cdabec950d2f4a183fbbcb8796e9d}{uart\+\_\+send}} (uint8\+\_\+t word\+\_\+send)
+\begin{DoxyCompactList}\small\item\em Sends a byte through C\+O\+M1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{uart1_8c_a39d4d8382fcef86119655409e25c0486}{uart\+\_\+receive}} (uint8\+\_\+t $\ast$word\+\_\+received)
+\begin{DoxyCompactList}\small\item\em Receives a byte through C\+O\+M1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{uart1_8c_a35feb85059ed1343dfc5cdef902d6226}{uart\+\_\+set\+\_\+conf}} (bool receiver)
+\begin{DoxyCompactList}\small\item\em Set uart configuration whether is a sender or a receiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{uart1_8c_a69e7d4998df04ca9ee6ac04b140df2fd}{uart\+\_\+hook\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{uart1_8c_a2e6ab7377be0fd52e7cb7b7ec8dee859}\label{uart1_8c_a2e6ab7377be0fd52e7cb7b7ec8dee859}} 
+\index{uart1.c@{uart1.c}!uart\_read@{uart\_read}}
+\index{uart\_read@{uart\_read}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_read()}{uart\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} uart\+\_\+read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{base,  }\item[{uint32\+\_\+t}]{port,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Reads from uart port and saves it in data variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & base address of C\+OM \\
+\hline
+{\em port} & offset of C\+OM port \\
+\hline
+{\em data} & data variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{uart1_8c_a2e6ab7377be0fd52e7cb7b7ec8dee859_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{uart1_8c_a39d4d8382fcef86119655409e25c0486}\label{uart1_8c_a39d4d8382fcef86119655409e25c0486}} 
+\index{uart1.c@{uart1.c}!uart\_receive@{uart\_receive}}
+\index{uart\_receive@{uart\_receive}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_receive()}{uart\_receive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} uart\+\_\+receive (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{word\+\_\+received }\end{DoxyParamCaption})}
+
+
+
+Receives a byte through C\+O\+M1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word\+\_\+received} & variable to store incoming data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{uart1_8c_a39d4d8382fcef86119655409e25c0486_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{uart1_8c_a4a9cdabec950d2f4a183fbbcb8796e9d}\label{uart1_8c_a4a9cdabec950d2f4a183fbbcb8796e9d}} 
+\index{uart1.c@{uart1.c}!uart\_send@{uart\_send}}
+\index{uart\_send@{uart\_send}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_send()}{uart\_send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} uart\+\_\+send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{word\+\_\+send }\end{DoxyParamCaption})}
+
+
+
+Sends a byte through C\+O\+M1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word\+\_\+send} & word to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{uart1_8c_a4a9cdabec950d2f4a183fbbcb8796e9d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{uart1_8c_a35feb85059ed1343dfc5cdef902d6226}\label{uart1_8c_a35feb85059ed1343dfc5cdef902d6226}} 
+\index{uart1.c@{uart1.c}!uart\_set\_conf@{uart\_set\_conf}}
+\index{uart\_set\_conf@{uart\_set\_conf}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_set\_conf()}{uart\_set\_conf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() uart\+\_\+set\+\_\+conf (\begin{DoxyParamCaption}\item[{bool}]{receiver }\end{DoxyParamCaption})}
+
+
+
+Set uart configuration whether is a sender or a receiver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em receiver} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{uart1_8c_a35feb85059ed1343dfc5cdef902d6226_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{uart1_8c_aa12b7563cba242a7eefc7f1c74cd7483}\label{uart1_8c_aa12b7563cba242a7eefc7f1c74cd7483}} 
+\index{uart1.c@{uart1.c}!uart\_subscribe\_int@{uart\_subscribe\_int}}
+\index{uart\_subscribe\_int@{uart\_subscribe\_int}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_subscribe\_int()}{uart\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() uart\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes uart interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{uart1_8c_a1cb30315f505aa8c7dfaee157e4c0733}\label{uart1_8c_a1cb30315f505aa8c7dfaee157e4c0733}} 
+\index{uart1.c@{uart1.c}!uart\_unsubscribe\_int@{uart\_unsubscribe\_int}}
+\index{uart\_unsubscribe\_int@{uart\_unsubscribe\_int}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_unsubscribe\_int()}{uart\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() uart\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+unsubcribes uart interrupts 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{uart1_8c_a3f13867a2fd6446839995ea8841b8c5c}\label{uart1_8c_a3f13867a2fd6446839995ea8841b8c5c}} 
+\index{uart1.c@{uart1.c}!uart\_write@{uart\_write}}
+\index{uart\_write@{uart\_write}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_write()}{uart\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} uart\+\_\+write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{base,  }\item[{uint32\+\_\+t}]{port,  }\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes data variable to uart port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & base address of C\+OM \\
+\hline
+{\em port} & offset of C\+OM port \\
+\hline
+{\em data} & data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{uart1_8c_a69e7d4998df04ca9ee6ac04b140df2fd}\label{uart1_8c_a69e7d4998df04ca9ee6ac04b140df2fd}} 
+\index{uart1.c@{uart1.c}!uart\_hook\_id@{uart\_hook\_id}}
+\index{uart\_hook\_id@{uart\_hook\_id}!uart1.c@{uart1.c}}
+\doxysubsubsection{\texorpdfstring{uart\_hook\_id}{uart\_hook\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} uart\+\_\+hook\+\_\+id}
+

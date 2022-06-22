@@ -1,0 +1,4 @@
+<map id="vbe_mode_info" name="vbe_mode_info">
+<area shape="rect" id="node1" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a6b0c9a948abfb56ad2c82f6b680fb44b" title=" " alt="" coords="176,5,215,32"/>
+</map>

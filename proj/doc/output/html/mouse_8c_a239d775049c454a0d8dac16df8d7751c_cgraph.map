@@ -1,0 +1,8 @@
+<map id="interruptsMouse" name="interruptsMouse">
+<area shape="rect" id="node1" title="handles the movement of the mouse and the buttons of the menu" alt="" coords="5,81,133,108"/>
+<area shape="rect" id="node2" href="$videoCard_8h.html#ad3023ce61dfc722b9b9eb2b1af09cf1a" title="returns horizontal resolution" alt="" coords="193,5,272,32"/>
+<area shape="rect" id="node3" href="$videoCard_8h.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="193,56,272,83"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#accd9686e27654f5a9b3d39386493bc0c" title="handles the information contained in the 3 bytes from the mouse and puts the information inside the p..." alt="" coords="181,107,284,133"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#aed4404005e4c565ac36656307386e0ac" title=" " alt="" coords="190,157,275,184"/>
+<area shape="rect" id="node6" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="332,157,431,184"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="vg_init" name="vg_init">
+<area shape="rect" id="node1" title="Initializes the video module in graphics mode." alt="" coords="5,56,72,83"/>
+<area shape="rect" id="node2" href="$videoCard_8c.html#ac25d63be854025a8dcbaf192aeb4a23c" title="returns bits per pixel" alt="" coords="120,5,247,32"/>
+<area shape="rect" id="node3" href="$videoCard_8c.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="144,56,223,83"/>
+<area shape="rect" id="node4" href="$videoCard_8c.html#aab6f118e02871748b081e026424509c2" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="122,107,245,133"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#a6b0c9a948abfb56ad2c82f6b680fb44b" title=" " alt="" coords="295,107,333,133"/>
+</map>

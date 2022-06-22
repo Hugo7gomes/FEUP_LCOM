@@ -1,0 +1,4 @@
+<map id="uart_set_conf" name="uart_set_conf">
+<area shape="rect" id="node1" title="Set uart configuration whether is a sender or a receiver." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$uart1_8c.html#a3f13867a2fd6446839995ea8841b8c5c" title="Writes data variable to uart port." alt="" coords="164,5,252,32"/>
+</map>

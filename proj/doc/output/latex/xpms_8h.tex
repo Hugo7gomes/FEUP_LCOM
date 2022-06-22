@@ -1,0 +1,71 @@
+\hypertarget{xpms_8h}{}\doxysection{libs/xpms/include/xpms.h File Reference}
+\label{xpms_8h}\index{libs/xpms/include/xpms.h@{libs/xpms/include/xpms.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+Card.\+h\char`\"{}}\newline
+Include dependency graph for xpms.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpms_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xpms_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{xpms_8h_a1ea00cd99647a7729a8f6c39a4e74546}{load\+Xpms}} ()
+\begin{DoxyCompactList}\small\item\em loads all xpms into a memory buffer \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{xpms_8h_a05b2c5e4dbcaffa701703b50a2111783}{read\+\_\+xpm}} (char $\ast$map\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} $\ast$wd, \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} $\ast$ht)
+\begin{DoxyCompactList}\small\item\em Reads a xpm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xpms_8h_a1ea00cd99647a7729a8f6c39a4e74546}\label{xpms_8h_a1ea00cd99647a7729a8f6c39a4e74546}} 
+\index{xpms.h@{xpms.h}!loadXpms@{loadXpms}}
+\index{loadXpms@{loadXpms}!xpms.h@{xpms.h}}
+\doxysubsubsection{\texorpdfstring{loadXpms()}{loadXpms()}}
+{\footnotesize\ttfamily void load\+Xpms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads all xpms into a memory buffer 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{xpms_8h_a1ea00cd99647a7729a8f6c39a4e74546_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{xpms_8h_a05b2c5e4dbcaffa701703b50a2111783}\label{xpms_8h_a05b2c5e4dbcaffa701703b50a2111783}} 
+\index{xpms.h@{xpms.h}!read\_xpm@{read\_xpm}}
+\index{read\_xpm@{read\_xpm}!xpms.h@{xpms.h}}
+\doxysubsubsection{\texorpdfstring{read\_xpm()}{read\_xpm()}}
+{\footnotesize\ttfamily char$\ast$ read\+\_\+xpm (\begin{DoxyParamCaption}\item[{char $\ast$}]{map\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} $\ast$}]{wd,  }\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} $\ast$}]{ht }\end{DoxyParamCaption})}
+
+
+
+Reads a xpm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & array containing xpm \\
+\hline
+{\em wd} & variable to store width \\
+\hline
+{\em ht} & variable to store height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ pointer to xpm 
+\end{DoxyReturn}

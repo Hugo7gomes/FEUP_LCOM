@@ -1,0 +1,11 @@
+<map id="project/src/interrupts.c" name="project/src/interrupts.c">
+<area shape="rect" id="node1" title=" " alt="" coords="69,5,237,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="215,453,300,480"/>
+<area shape="rect" id="node3" href="$interrupts_8h.html" title=" " alt="" coords="238,80,335,107"/>
+<area shape="rect" id="node4" href="$libs_8h.html" title=" " alt="" coords="333,155,390,181"/>
+<area shape="rect" id="node5" href="$videoCard_8h.html" title=" " alt="" coords="233,304,425,331"/>
+<area shape="rect" id="node6" href="$keyboard_8h.html" title=" " alt="" coords="158,379,357,405"/>
+<area shape="rect" id="node7" href="$mouse_8h.html" title=" " alt="" coords="43,229,199,256"/>
+<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="223,229,382,256"/>
+<area shape="rect" id="node9" href="$uart1_8h.html" title=" " alt="" coords="508,304,657,331"/>
+</map>

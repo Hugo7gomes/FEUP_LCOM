@@ -1,0 +1,5 @@
+<map id="uart_receive" name="uart_receive">
+<area shape="rect" id="node1" title="Receives a byte through COM1." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$uart1_8c.html#a2e6ab7377be0fd52e7cb7b7ec8dee859" title="Reads from uart port and saves it in data variable." alt="" coords="156,5,240,32"/>
+<area shape="rect" id="node3" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="288,5,387,32"/>
+</map>

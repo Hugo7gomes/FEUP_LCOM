@@ -1,0 +1,99 @@
+\hypertarget{interrupts_8c}{}\doxysection{project/src/interrupts.c File Reference}
+\label{interrupts_8c}\index{project/src/interrupts.c@{project/src/interrupts.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}interrupts.\+h\char`\"{}}\newline
+Include dependency graph for interrupts.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interrupts_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{interrupts_8c_a9cdcd223436a615be522bd7b6e6ae946}{unsubscribe\+All}} (void)
+\begin{DoxyCompactList}\small\item\em unsubscribes all devices \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{interrupts_8c_a129a516686138e44517987974ee27cb0}{subscribe\+All}} (void)
+\begin{DoxyCompactList}\small\item\em subscribes all devices \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{interrupts_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}{mouse\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{interrupts_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}{timer\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{interrupts_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}{keyboard\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{interrupts_8c_ae3ebbcf79b43fa4a7ead09839b26e381}{uart\+I\+RQ}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{interrupts_8c_a129a516686138e44517987974ee27cb0}\label{interrupts_8c_a129a516686138e44517987974ee27cb0}} 
+\index{interrupts.c@{interrupts.c}!subscribeAll@{subscribeAll}}
+\index{subscribeAll@{subscribeAll}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{subscribeAll()}{subscribeAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() subscribe\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+subscribes all devices 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{interrupts_8c_a129a516686138e44517987974ee27cb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interrupts_8c_a9cdcd223436a615be522bd7b6e6ae946}\label{interrupts_8c_a9cdcd223436a615be522bd7b6e6ae946}} 
+\index{interrupts.c@{interrupts.c}!unsubscribeAll@{unsubscribeAll}}
+\index{unsubscribeAll@{unsubscribeAll}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{unsubscribeAll()}{unsubscribeAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() unsubscribe\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes all devices 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{interrupts_8c_a9cdcd223436a615be522bd7b6e6ae946_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{interrupts_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}\label{interrupts_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}} 
+\index{interrupts.c@{interrupts.c}!keyboardIRQ@{keyboardIRQ}}
+\index{keyboardIRQ@{keyboardIRQ}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{keyboardIRQ}{keyboardIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t keyboard\+I\+RQ}
+
+\mbox{\Hypertarget{interrupts_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}\label{interrupts_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}} 
+\index{interrupts.c@{interrupts.c}!mouseIRQ@{mouseIRQ}}
+\index{mouseIRQ@{mouseIRQ}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{mouseIRQ}{mouseIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t mouse\+I\+RQ}
+
+\mbox{\Hypertarget{interrupts_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}\label{interrupts_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}} 
+\index{interrupts.c@{interrupts.c}!timerIRQ@{timerIRQ}}
+\index{timerIRQ@{timerIRQ}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{timerIRQ}{timerIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t timer\+I\+RQ}
+
+\mbox{\Hypertarget{interrupts_8c_ae3ebbcf79b43fa4a7ead09839b26e381}\label{interrupts_8c_ae3ebbcf79b43fa4a7ead09839b26e381}} 
+\index{interrupts.c@{interrupts.c}!uartIRQ@{uartIRQ}}
+\index{uartIRQ@{uartIRQ}!interrupts.c@{interrupts.c}}
+\doxysubsubsection{\texorpdfstring{uartIRQ}{uartIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t uart\+I\+RQ}
+

@@ -1,0 +1,4 @@
+<map id="uart_read" name="uart_read">
+<area shape="rect" id="node1" title="Reads from uart port and saves it in data variable." alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node2" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="137,5,236,32"/>
+</map>

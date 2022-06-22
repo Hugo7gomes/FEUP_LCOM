@@ -1,0 +1,6 @@
+<map id="drawPixMapChangeColor" name="drawPixMapChangeColor">
+<area shape="rect" id="node1" title="draws the pixMap in the screen with selected color" alt="" coords="5,31,191,57"/>
+<area shape="rect" id="node2" href="$videoCard_8c.html#a6091a4bd04596e6e8e39b7dee1e1b118" title="Draws a pixel with selected color by changing the video RAM." alt="" coords="239,31,324,57"/>
+<area shape="rect" id="node3" href="$videoCard_8c.html#ad3023ce61dfc722b9b9eb2b1af09cf1a" title="returns horizontal resolution" alt="" coords="372,5,451,32"/>
+<area shape="rect" id="node4" href="$videoCard_8c.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="372,56,451,83"/>
+</map>

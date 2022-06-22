@@ -1,0 +1,149 @@
+\hypertarget{keyboard_8h}{}\doxysection{libs/kbc/include/keyboard.h File Reference}
+\label{keyboard_8h}\index{libs/kbc/include/keyboard.h@{libs/kbc/include/keyboard.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libs/xpms/include/xpms.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structletter}{letter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a55a40fdf480dbb6cda528deb2711bc7b}{L\+E\+T\+T\+E\+R\+\_\+\+H\+E\+I\+G\+HT}}~15
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a35be84e9d079df30664be87008be9512}{L\+E\+T\+T\+E\+R\+\_\+\+W\+I\+D\+TH}}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{keyboard_8h_a09bd29e2cd75939aa99c0c6c02b108ce}{keyboard\+\_\+ih}} (void)
+\begin{DoxyCompactList}\small\item\em keyboard interrupt handler \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}{keyboard\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes keyboard interrupts \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubcribes keyboard interrupts \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{keyboard_8h_a67909c373d5177e1cb9f025bbfc575c0}{interrupts\+KB}} ()
+\begin{DoxyCompactList}\small\item\em reads scancodes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{keyboard_8h_add466516506fbc3cd7ead7cfa0de38f7}{add\+Letter\+Array}} (uint16\+\_\+t break\+Code)
+\begin{DoxyCompactList}\small\item\em inserts the character corresponding to the key pressed into an array \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{keyboard_8h_a55a40fdf480dbb6cda528deb2711bc7b}\label{keyboard_8h_a55a40fdf480dbb6cda528deb2711bc7b}} 
+\index{keyboard.h@{keyboard.h}!LETTER\_HEIGHT@{LETTER\_HEIGHT}}
+\index{LETTER\_HEIGHT@{LETTER\_HEIGHT}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{LETTER\_HEIGHT}{LETTER\_HEIGHT}}
+{\footnotesize\ttfamily \#define L\+E\+T\+T\+E\+R\+\_\+\+H\+E\+I\+G\+HT~15}
+
+\mbox{\Hypertarget{keyboard_8h_a35be84e9d079df30664be87008be9512}\label{keyboard_8h_a35be84e9d079df30664be87008be9512}} 
+\index{keyboard.h@{keyboard.h}!LETTER\_WIDTH@{LETTER\_WIDTH}}
+\index{LETTER\_WIDTH@{LETTER\_WIDTH}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{LETTER\_WIDTH}{LETTER\_WIDTH}}
+{\footnotesize\ttfamily \#define L\+E\+T\+T\+E\+R\+\_\+\+W\+I\+D\+TH~20}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_add466516506fbc3cd7ead7cfa0de38f7}\label{keyboard_8h_add466516506fbc3cd7ead7cfa0de38f7}} 
+\index{keyboard.h@{keyboard.h}!addLetterArray@{addLetterArray}}
+\index{addLetterArray@{addLetterArray}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{addLetterArray()}{addLetterArray()}}
+{\footnotesize\ttfamily void add\+Letter\+Array (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{break\+Code }\end{DoxyParamCaption})}
+
+
+
+inserts the character corresponding to the key pressed into an array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em break\+Code} & of the key pressed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{keyboard_8h_a67909c373d5177e1cb9f025bbfc575c0}\label{keyboard_8h_a67909c373d5177e1cb9f025bbfc575c0}} 
+\index{keyboard.h@{keyboard.h}!interruptsKB@{interruptsKB}}
+\index{interruptsKB@{interruptsKB}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{interruptsKB()}{interruptsKB()}}
+{\footnotesize\ttfamily void interrupts\+KB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reads scancodes 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h_a67909c373d5177e1cb9f025bbfc575c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a09bd29e2cd75939aa99c0c6c02b108ce}\label{keyboard_8h_a09bd29e2cd75939aa99c0c6c02b108ce}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_ih@{keyboard\_ih}}
+\index{keyboard\_ih@{keyboard\_ih}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_ih()}{keyboard\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() keyboard\+\_\+ih (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+keyboard interrupt handler 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{keyboard_8h_a09bd29e2cd75939aa99c0c6c02b108ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}\label{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_subscribe\_int@{keyboard\_subscribe\_int}}
+\index{keyboard\_subscribe\_int@{keyboard\_subscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes keyboard interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}\label{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}}
+\index{keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubcribes keyboard interrupts 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}

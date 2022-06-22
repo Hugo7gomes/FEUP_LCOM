@@ -1,0 +1,419 @@
+\hypertarget{videoCard_8c}{}\doxysection{libs/graph/src/video\+Card.c File Reference}
+\label{videoCard_8c}\index{libs/graph/src/videoCard.c@{libs/graph/src/videoCard.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+Card.\+h\char`\"{}}\newline
+Include dependency graph for video\+Card.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{videoCard_8c_aab6f118e02871748b081e026424509c2}{vbe\+\_\+mode\+\_\+info}} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$vbe\+Mode\+Info)
+\begin{DoxyCompactList}\small\item\em Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{videoCard_8c_ad3023ce61dfc722b9b9eb2b1af09cf1a}{get\+\_\+hres}} (void)
+\begin{DoxyCompactList}\small\item\em returns horizontal resolution \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{videoCard_8c_acc9f6aa0262b3700eaca672dbb7248a9}{get\+\_\+vres}} (void)
+\begin{DoxyCompactList}\small\item\em returns vertical resolution \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{videoCard_8c_ac25d63be854025a8dcbaf192aeb4a23c}{get\+\_\+bits\+Per\+Pixel}} (void)
+\begin{DoxyCompactList}\small\item\em returns bits per pixel \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{videoCard_8c_a3d80129e63fc6e9c09d37f9a834864e3}{free\+\_\+map\+\_\+memory}} (void)
+\begin{DoxyCompactList}\small\item\em releases video\+\_\+buffer memory \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{videoCard_8c_a8cb4c0ecc241678fa38a1f8c304ed012}{draw\+Pix\+Map}} (\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} height, \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} width, char $\ast$pix\+Map, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}})
+\begin{DoxyCompactList}\small\item\em draws the pix\+Map in the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{videoCard_8c_ac9243d68ee3f2746e9ae726096412554}{draw\+Pix\+Map\+Change\+Color}} (\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} height, \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} width, char $\ast$pix\+Map, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}}, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em draws the pix\+Map in the screen with selected color \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{videoCard_8c_ada5ce0998b6f28a748f9210f9ba3f385}{draw\+Pix\+Map\+Mouse}} (\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} height, \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} width, char $\ast$pix\+Map, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}})
+\begin{DoxyCompactList}\small\item\em draws mouse pix\+Map ignoring background pixels \end{DoxyCompactList}\item 
+void $\ast$() \mbox{\hyperlink{videoCard_8c_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{videoCard_8c_a6091a4bd04596e6e8e39b7dee1e1b118}{draw\+Pixel}} (uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}}, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel with selected color by changing the video R\+AM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{videoCard_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}}, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line with selected color by changing the video R\+AM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{videoCard_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t \mbox{\hyperlink{xpms_8c_aa35880183758cc81e58eebfb6d55a2eb}{x}}, uint16\+\_\+t \mbox{\hyperlink{xpms_8c_a736f2da17d31213bac83280843583d16}{y}}, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a filled rectangle whith selected color by changing the video R\+AM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{videoCard_8c_a74194fef9792053f4ae348beb493516c}{clear\+Screen}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Sets all video\+\_\+buffer pixels to zero (black). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{videoCard_8c_a56c5cf8a568cff737ff95520cbe6b405}{draw}} ()
+\begin{DoxyCompactList}\small\item\em copies video\+\_\+buffer(auxiliar buffer) to video R\+AM buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{videoCard_8c_adff9a72586cfe5f82987931ab94f2244}{vg\+\_\+draw\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws menu rectangle, buttons and text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{videoCard_8c_acbcf61ec794276372586878110524b97}{mode\+Info}}
+\item 
+static void $\ast$ \mbox{\hyperlink{videoCard_8c_a5077a1a703b40b073dc6b5c1129ab0a1}{video\+\_\+mem}}
+\item 
+static void $\ast$ \mbox{\hyperlink{videoCard_8c_a9dd702e63e63161a33a17df975310705}{video\+\_\+buffer}}
+\item 
+unsigned \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{videoCard_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}{vram\+\_\+size}}
+\item 
+char $\ast$ \mbox{\hyperlink{videoCard_8c_a9975449ddf22b573bf8f89ab425c72a4}{map\+Xpms}} \mbox{[}63\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{videoCard_8c_a74194fef9792053f4ae348beb493516c}\label{videoCard_8c_a74194fef9792053f4ae348beb493516c}} 
+\index{videoCard.c@{videoCard.c}!clearScreen@{clearScreen}}
+\index{clearScreen@{clearScreen}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{clearScreen()}{clearScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} clear\+Screen (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets all video\+\_\+buffer pixels to zero (black). 
+
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videoCard_8c_a56c5cf8a568cff737ff95520cbe6b405}\label{videoCard_8c_a56c5cf8a568cff737ff95520cbe6b405}} 
+\index{videoCard.c@{videoCard.c}!draw@{draw}}
+\index{draw@{draw}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+copies video\+\_\+buffer(auxiliar buffer) to video R\+AM buffer. 
+
+\mbox{\Hypertarget{videoCard_8c_a6091a4bd04596e6e8e39b7dee1e1b118}\label{videoCard_8c_a6091a4bd04596e6e8e39b7dee1e1b118}} 
+\index{videoCard.c@{videoCard.c}!drawPixel@{drawPixel}}
+\index{drawPixel@{drawPixel}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{drawPixel()}{drawPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} draw\+Pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel with selected color by changing the video R\+AM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{videoCard_8c_a6091a4bd04596e6e8e39b7dee1e1b118_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_a8cb4c0ecc241678fa38a1f8c304ed012}\label{videoCard_8c_a8cb4c0ecc241678fa38a1f8c304ed012}} 
+\index{videoCard.c@{videoCard.c}!drawPixMap@{drawPixMap}}
+\index{drawPixMap@{drawPixMap}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{drawPixMap()}{drawPixMap()}}
+{\footnotesize\ttfamily void draw\+Pix\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{height,  }\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{width,  }\item[{char $\ast$}]{pix\+Map,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws the pix\+Map in the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em pix\+Map} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_a8cb4c0ecc241678fa38a1f8c304ed012_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_ac9243d68ee3f2746e9ae726096412554}\label{videoCard_8c_ac9243d68ee3f2746e9ae726096412554}} 
+\index{videoCard.c@{videoCard.c}!drawPixMapChangeColor@{drawPixMapChangeColor}}
+\index{drawPixMapChangeColor@{drawPixMapChangeColor}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{drawPixMapChangeColor()}{drawPixMapChangeColor()}}
+{\footnotesize\ttfamily void draw\+Pix\+Map\+Change\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{height,  }\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{width,  }\item[{char $\ast$}]{pix\+Map,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+draws the pix\+Map in the screen with selected color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em pix\+Map} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_ac9243d68ee3f2746e9ae726096412554_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_ada5ce0998b6f28a748f9210f9ba3f385}\label{videoCard_8c_ada5ce0998b6f28a748f9210f9ba3f385}} 
+\index{videoCard.c@{videoCard.c}!drawPixMapMouse@{drawPixMapMouse}}
+\index{drawPixMapMouse@{drawPixMapMouse}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{drawPixMapMouse()}{drawPixMapMouse()}}
+{\footnotesize\ttfamily void draw\+Pix\+Map\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{height,  }\item[{\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}}]{width,  }\item[{char $\ast$}]{pix\+Map,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws mouse pix\+Map ignoring background pixels 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em pix\+Map} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_ada5ce0998b6f28a748f9210f9ba3f385_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_a3d80129e63fc6e9c09d37f9a834864e3}\label{videoCard_8c_a3d80129e63fc6e9c09d37f9a834864e3}} 
+\index{videoCard.c@{videoCard.c}!free\_map\_memory@{free\_map\_memory}}
+\index{free\_map\_memory@{free\_map\_memory}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{free\_map\_memory()}{free\_map\_memory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} free\+\_\+map\+\_\+memory (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+releases video\+\_\+buffer memory 
+
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videoCard_8c_ac25d63be854025a8dcbaf192aeb4a23c}\label{videoCard_8c_ac25d63be854025a8dcbaf192aeb4a23c}} 
+\index{videoCard.c@{videoCard.c}!get\_bitsPerPixel@{get\_bitsPerPixel}}
+\index{get\_bitsPerPixel@{get\_bitsPerPixel}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{get\_bitsPerPixel()}{get\_bitsPerPixel()}}
+{\footnotesize\ttfamily unsigned get\+\_\+bits\+Per\+Pixel (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+returns bits per pixel 
+
+\begin{DoxyReturn}{Returns}
+unsigned bits per pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videoCard_8c_ad3023ce61dfc722b9b9eb2b1af09cf1a}\label{videoCard_8c_ad3023ce61dfc722b9b9eb2b1af09cf1a}} 
+\index{videoCard.c@{videoCard.c}!get\_hres@{get\_hres}}
+\index{get\_hres@{get\_hres}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{get\_hres()}{get\_hres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+hres (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+returns horizontal resolution 
+
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t horizontal resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videoCard_8c_acc9f6aa0262b3700eaca672dbb7248a9}\label{videoCard_8c_acc9f6aa0262b3700eaca672dbb7248a9}} 
+\index{videoCard.c@{videoCard.c}!get\_vres@{get\_vres}}
+\index{get\_vres@{get\_vres}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{get\_vres()}{get\_vres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+vres (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+returns vertical resolution 
+
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t vertical resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{videoCard_8c_aab6f118e02871748b081e026424509c2}\label{videoCard_8c_aab6f118e02871748b081e026424509c2}} 
+\index{videoCard.c@{videoCard.c}!vbe\_mode\_info@{vbe\_mode\_info}}
+\index{vbe\_mode\_info@{vbe\_mode\_info}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vbe\_mode\_info()}{vbe\_mode\_info()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() vbe\+\_\+mode\+\_\+info (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{vbe\+Mode\+Info }\end{DoxyParamCaption})}
+
+
+
+Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode whose information should be returned \\
+\hline
+{\em vbe\+Mode\+Info} & address of vbe\+\_\+mode\+\_\+info\+\_\+t structure to be initialized \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{videoCard_8c_aab6f118e02871748b081e026424509c2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{videoCard_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{videoCard.c@{videoCard.c}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line with selected color by changing the video R\+AM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_a99d2da2559e11200c6b40c469e9977ec}\label{videoCard_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{videoCard.c@{videoCard.c}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a filled rectangle whith selected color by changing the video R\+AM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em width} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_adff9a72586cfe5f82987931ab94f2244}\label{videoCard_8c_adff9a72586cfe5f82987931ab94f2244}} 
+\index{videoCard.c@{videoCard.c}!vg\_drawMenu@{vg\_drawMenu}}
+\index{vg\_drawMenu@{vg\_drawMenu}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vg\_drawMenu()}{vg\_drawMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} vg\+\_\+draw\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws menu rectangle, buttons and text. 
+
+\begin{DoxyReturn}{Returns}
+int return 0 on success, 1 on failure 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{videoCard_8c_adff9a72586cfe5f82987931ab94f2244_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{videoCard_8c_aa6c1ff5024cd4d15e476bce487584daa}\label{videoCard_8c_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{videoCard.c@{videoCard.c}!vg\_init@{vg\_init}}
+\index{vg\_init@{vg\_init}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vg\_init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the video module in graphics mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & V\+BE mode to set \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{videoCard_8c_aa6c1ff5024cd4d15e476bce487584daa_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{videoCard_8c_a9975449ddf22b573bf8f89ab425c72a4}\label{videoCard_8c_a9975449ddf22b573bf8f89ab425c72a4}} 
+\index{videoCard.c@{videoCard.c}!mapXpms@{mapXpms}}
+\index{mapXpms@{mapXpms}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{mapXpms}{mapXpms}}
+{\footnotesize\ttfamily char$\ast$ map\+Xpms\mbox{[}63\mbox{]}}
+
+\mbox{\Hypertarget{videoCard_8c_acbcf61ec794276372586878110524b97}\label{videoCard_8c_acbcf61ec794276372586878110524b97}} 
+\index{videoCard.c@{videoCard.c}!modeInfo@{modeInfo}}
+\index{modeInfo@{modeInfo}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{modeInfo}{modeInfo}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t mode\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{videoCard_8c_a9dd702e63e63161a33a17df975310705}\label{videoCard_8c_a9dd702e63e63161a33a17df975310705}} 
+\index{videoCard.c@{videoCard.c}!video\_buffer@{video\_buffer}}
+\index{video\_buffer@{video\_buffer}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{video\_buffer}{video\_buffer}}
+{\footnotesize\ttfamily void$\ast$ video\+\_\+buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{videoCard_8c_a5077a1a703b40b073dc6b5c1129ab0a1}\label{videoCard_8c_a5077a1a703b40b073dc6b5c1129ab0a1}} 
+\index{videoCard.c@{videoCard.c}!video\_mem@{video\_mem}}
+\index{video\_mem@{video\_mem}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{video\_mem}{video\_mem}}
+{\footnotesize\ttfamily void$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{videoCard_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}\label{videoCard_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}} 
+\index{videoCard.c@{videoCard.c}!vram\_size@{vram\_size}}
+\index{vram\_size@{vram\_size}!videoCard.c@{videoCard.c}}
+\doxysubsubsection{\texorpdfstring{vram\_size}{vram\_size}}
+{\footnotesize\ttfamily unsigned \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} vram\+\_\+size}
+

@@ -1,0 +1,142 @@
+\hypertarget{timer_8c}{}\doxysection{libs/timer/src/timer.c File Reference}
+\label{timer_8c}\index{libs/timer/src/timer.c@{libs/timer/src/timer.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+Include dependency graph for timer.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{timer_8c_af2c04fa8e97ffa748fd3f612886a92a7}{timer\+\_\+set\+\_\+frequency}} (uint8\+\_\+t timer, uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em changes the operating frequency of a timer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{timer_8c_ac57a7e1140a7e00ad95ac5488d2a671b}{timer\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes timer interrupts \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{timer_8c_afabd21de449be154dd65d5fdb2d8045d}{timer\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes timer interrupts \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{timer_8c_a91a2072306c68353712a6b771287dc2c}{timer\+\_\+int\+\_\+handler}} ()
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() \mbox{\hyperlink{timer_8c_a703c60b40c8c49607d6ecb6fef82d27a}{timer\+\_\+get\+\_\+conf}} (uint8\+\_\+t timer, uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em reads the input timer configuration via read-\/back command \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{timer_8c_a0c4a65c6ebb2044e34f1d61aaae10718}{count\+\_\+freq}} = 0
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{timer_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer_8c_a703c60b40c8c49607d6ecb6fef82d27a}\label{timer_8c_a703c60b40c8c49607d6ecb6fef82d27a}} 
+\index{timer.c@{timer.c}!timer\_get\_conf@{timer\_get\_conf}}
+\index{timer\_get\_conf@{timer\_get\_conf}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_get\_conf()}{timer\_get\_conf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() timer\+\_\+get\+\_\+conf (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{uint8\+\_\+t $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+reads the input timer configuration via read-\/back command 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & timer whose configuration to read (Ranges from 0 to 2) \\
+\hline
+{\em st} & address of memory position to be filled with the timer config\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{timer_8c_a703c60b40c8c49607d6ecb6fef82d27a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_a91a2072306c68353712a6b771287dc2c}\label{timer_8c_a91a2072306c68353712a6b771287dc2c}} 
+\index{timer.c@{timer.c}!timer\_int\_handler@{timer\_int\_handler}}
+\index{timer\_int\_handler@{timer\_int\_handler}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_int\_handler()}{timer\_int\_handler()}}
+{\footnotesize\ttfamily void() timer\+\_\+int\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer_8c_af2c04fa8e97ffa748fd3f612886a92a7}\label{timer_8c_af2c04fa8e97ffa748fd3f612886a92a7}} 
+\index{timer.c@{timer.c}!timer\_set\_frequency@{timer\_set\_frequency}}
+\index{timer\_set\_frequency@{timer\_set\_frequency}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_set\_frequency()}{timer\_set\_frequency()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() timer\+\_\+set\+\_\+frequency (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{uint32\+\_\+t}]{freq }\end{DoxyParamCaption})}
+
+
+
+changes the operating frequency of a timer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & timer to configure \\
+\hline
+{\em freq} & timer operating frequency\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_af2c04fa8e97ffa748fd3f612886a92a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_ac57a7e1140a7e00ad95ac5488d2a671b}\label{timer_8c_ac57a7e1140a7e00ad95ac5488d2a671b}} 
+\index{timer.c@{timer.c}!timer\_subscribe\_int@{timer\_subscribe\_int}}
+\index{timer\_subscribe\_int@{timer\_subscribe\_int}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_subscribe\_int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes timer interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{timer_8c_afabd21de449be154dd65d5fdb2d8045d}\label{timer_8c_afabd21de449be154dd65d5fdb2d8045d}} 
+\index{timer.c@{timer.c}!timer\_unsubscribe\_int@{timer\_unsubscribe\_int}}
+\index{timer\_unsubscribe\_int@{timer\_unsubscribe\_int}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{timer\_unsubscribe\_int()}{timer\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}}() timer\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes timer interrupts 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{timer_8c_a0c4a65c6ebb2044e34f1d61aaae10718}\label{timer_8c_a0c4a65c6ebb2044e34f1d61aaae10718}} 
+\index{timer.c@{timer.c}!count\_freq@{count\_freq}}
+\index{count\_freq@{count\_freq}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{count\_freq}{count\_freq}}
+{\footnotesize\ttfamily unsigned \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} count\+\_\+freq = 0}
+
+\mbox{\Hypertarget{timer_8c_a96f78a87d064e47d627d222f67a8d012}\label{timer_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{timer.c@{timer.c}!hook\_id@{hook\_id}}
+\index{hook\_id@{hook\_id}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id}{hook\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} hook\+\_\+id = 0}
+

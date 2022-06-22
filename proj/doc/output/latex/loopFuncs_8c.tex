@@ -1,0 +1,162 @@
+\hypertarget{loopFuncs_8c}{}\doxysection{project/src/loop\+Funcs.c File Reference}
+\label{loopFuncs_8c}\index{project/src/loopFuncs.c@{project/src/loopFuncs.c}}
+{\ttfamily \#include \char`\"{}loop\+Funcs.\+h\char`\"{}}\newline
+Include dependency graph for loop\+Funcs.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loopFuncs_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{loopFuncs_8c_a56a4c88966159c3f2eedead5470a0edf}{main\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em the loop function of tha main machine \end{DoxyCompactList}\item 
+\mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} \mbox{\hyperlink{loopFuncs_8c_a56221c1ba8230657c3c48aaa9cbae7f5}{sender\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em the loop function of the second machine (sender) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{loopFuncs_8c_abe0e301afde4b3874b9f527e216ed2e1}{mouse}} \mbox{[}$\,$\mbox{]}
+\item 
+struct \mbox{\hyperlink{structletter}{letter}} \mbox{\hyperlink{loopFuncs_8c_ac402668f7c4e9db7e046f5872beeb5f4}{letters\+Array}} \mbox{[}1360\mbox{]}
+\item 
+char $\ast$ \mbox{\hyperlink{loopFuncs_8c_a9975449ddf22b573bf8f89ab425c72a4}{map\+Xpms}} \mbox{[}63\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{loopFuncs_8c_ac4c81d34a9be02e382c2086d9fb765a9}{scan\+Code}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{loopFuncs_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}{mouse\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{loopFuncs_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}{timer\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{loopFuncs_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}{keyboard\+I\+RQ}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{loopFuncs_8c_ae3ebbcf79b43fa4a7ead09839b26e381}{uart\+I\+RQ}}
+\item 
+bool \mbox{\hyperlink{loopFuncs_8c_a2995461f3105afc9f13934cd5c0734b2}{temp}}
+\item 
+bool \mbox{\hyperlink{loopFuncs_8c_a2025d419432f9076a4a1705465227e03}{serial\+Port\+On}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{loopFuncs_8c_afeb16252e8be3656c49598869837a066}{color\+BG}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{loopFuncs_8c_ab1ea8156a2667cda92304c6eb713ea11}{colorL}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{loopFuncs_8c_a56a4c88966159c3f2eedead5470a0edf}\label{loopFuncs_8c_a56a4c88966159c3f2eedead5470a0edf}} 
+\index{loopFuncs.c@{loopFuncs.c}!mainLoop@{mainLoop}}
+\index{mainLoop@{mainLoop}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{mainLoop()}{mainLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} main\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the loop function of tha main machine 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loopFuncs_8c_a56a4c88966159c3f2eedead5470a0edf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{loopFuncs_8c_a56221c1ba8230657c3c48aaa9cbae7f5}\label{loopFuncs_8c_a56221c1ba8230657c3c48aaa9cbae7f5}} 
+\index{loopFuncs.c@{loopFuncs.c}!senderLoop@{senderLoop}}
+\index{senderLoop@{senderLoop}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{senderLoop()}{senderLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8c_a6b0c9a948abfb56ad2c82f6b680fb44b}{int}} sender\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the loop function of the second machine (sender) 
+
+\begin{DoxyReturn}{Returns}
+int returns 0 in case of success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loopFuncs_8c_a56221c1ba8230657c3c48aaa9cbae7f5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{loopFuncs_8c_afeb16252e8be3656c49598869837a066}\label{loopFuncs_8c_afeb16252e8be3656c49598869837a066}} 
+\index{loopFuncs.c@{loopFuncs.c}!colorBG@{colorBG}}
+\index{colorBG@{colorBG}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{colorBG}{colorBG}}
+{\footnotesize\ttfamily uint32\+\_\+t color\+BG}
+
+\mbox{\Hypertarget{loopFuncs_8c_ab1ea8156a2667cda92304c6eb713ea11}\label{loopFuncs_8c_ab1ea8156a2667cda92304c6eb713ea11}} 
+\index{loopFuncs.c@{loopFuncs.c}!colorL@{colorL}}
+\index{colorL@{colorL}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{colorL}{colorL}}
+{\footnotesize\ttfamily uint32\+\_\+t colorL}
+
+\mbox{\Hypertarget{loopFuncs_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}\label{loopFuncs_8c_ac9445b9f70510fdd18a8cea0ca1e4a8c}} 
+\index{loopFuncs.c@{loopFuncs.c}!keyboardIRQ@{keyboardIRQ}}
+\index{keyboardIRQ@{keyboardIRQ}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{keyboardIRQ}{keyboardIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t keyboard\+I\+RQ}
+
+\mbox{\Hypertarget{loopFuncs_8c_ac402668f7c4e9db7e046f5872beeb5f4}\label{loopFuncs_8c_ac402668f7c4e9db7e046f5872beeb5f4}} 
+\index{loopFuncs.c@{loopFuncs.c}!lettersArray@{lettersArray}}
+\index{lettersArray@{lettersArray}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{lettersArray}{lettersArray}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structletter}{letter}} letters\+Array\mbox{[}1360\mbox{]}}
+
+\mbox{\Hypertarget{loopFuncs_8c_a9975449ddf22b573bf8f89ab425c72a4}\label{loopFuncs_8c_a9975449ddf22b573bf8f89ab425c72a4}} 
+\index{loopFuncs.c@{loopFuncs.c}!mapXpms@{mapXpms}}
+\index{mapXpms@{mapXpms}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{mapXpms}{mapXpms}}
+{\footnotesize\ttfamily char$\ast$ map\+Xpms\mbox{[}63\mbox{]}}
+
+\mbox{\Hypertarget{loopFuncs_8c_abe0e301afde4b3874b9f527e216ed2e1}\label{loopFuncs_8c_abe0e301afde4b3874b9f527e216ed2e1}} 
+\index{loopFuncs.c@{loopFuncs.c}!mouse@{mouse}}
+\index{mouse@{mouse}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily char$\ast$ mouse\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{loopFuncs_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}\label{loopFuncs_8c_ab9ec5fa1a8c32357e9f9df5fad35f126}} 
+\index{loopFuncs.c@{loopFuncs.c}!mouseIRQ@{mouseIRQ}}
+\index{mouseIRQ@{mouseIRQ}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{mouseIRQ}{mouseIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t mouse\+I\+RQ}
+
+\mbox{\Hypertarget{loopFuncs_8c_ac4c81d34a9be02e382c2086d9fb765a9}\label{loopFuncs_8c_ac4c81d34a9be02e382c2086d9fb765a9}} 
+\index{loopFuncs.c@{loopFuncs.c}!scanCode@{scanCode}}
+\index{scanCode@{scanCode}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{scanCode}{scanCode}}
+{\footnotesize\ttfamily uint8\+\_\+t scan\+Code}
+
+\mbox{\Hypertarget{loopFuncs_8c_a2025d419432f9076a4a1705465227e03}\label{loopFuncs_8c_a2025d419432f9076a4a1705465227e03}} 
+\index{loopFuncs.c@{loopFuncs.c}!serialPortOn@{serialPortOn}}
+\index{serialPortOn@{serialPortOn}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{serialPortOn}{serialPortOn}}
+{\footnotesize\ttfamily bool serial\+Port\+On}
+
+\mbox{\Hypertarget{loopFuncs_8c_a2995461f3105afc9f13934cd5c0734b2}\label{loopFuncs_8c_a2995461f3105afc9f13934cd5c0734b2}} 
+\index{loopFuncs.c@{loopFuncs.c}!temp@{temp}}
+\index{temp@{temp}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily bool temp}
+
+\mbox{\Hypertarget{loopFuncs_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}\label{loopFuncs_8c_a4dad6e0779a1a1e0fa3ef827654fe8d0}} 
+\index{loopFuncs.c@{loopFuncs.c}!timerIRQ@{timerIRQ}}
+\index{timerIRQ@{timerIRQ}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{timerIRQ}{timerIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t timer\+I\+RQ}
+
+\mbox{\Hypertarget{loopFuncs_8c_ae3ebbcf79b43fa4a7ead09839b26e381}\label{loopFuncs_8c_ae3ebbcf79b43fa4a7ead09839b26e381}} 
+\index{loopFuncs.c@{loopFuncs.c}!uartIRQ@{uartIRQ}}
+\index{uartIRQ@{uartIRQ}!loopFuncs.c@{loopFuncs.c}}
+\doxysubsubsection{\texorpdfstring{uartIRQ}{uartIRQ}}
+{\footnotesize\ttfamily uint8\+\_\+t uart\+I\+RQ}
+

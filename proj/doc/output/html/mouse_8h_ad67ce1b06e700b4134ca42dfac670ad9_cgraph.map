@@ -1,0 +1,5 @@
+<map id="mouse_disable_info" name="mouse_disable_info">
+<area shape="rect" id="node1" title="disables the data report from the mouse" alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a6e823cc794001b26ed2b3106fa9c5ca7" title="sends a command to the mouse" alt="" coords="205,5,332,32"/>
+<area shape="rect" id="node3" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="380,5,479,32"/>
+</map>

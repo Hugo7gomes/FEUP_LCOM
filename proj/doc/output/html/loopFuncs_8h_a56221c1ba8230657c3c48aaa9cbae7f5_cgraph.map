@@ -1,0 +1,13 @@
+<map id="senderLoop" name="senderLoop">
+<area shape="rect" id="node1" title="the loop function of the second machine (sender)" alt="" coords="5,146,103,173"/>
+<area shape="rect" id="node2" href="$keyboard_8h.html#a09bd29e2cd75939aa99c0c6c02b108ce" title="keyboard interrupt handler" alt="" coords="389,14,491,41"/>
+<area shape="rect" id="node4" href="$keyboard_8h.html#a178b1db0b319dccad2840cc3fd273132" title="subscribes keyboard interrupts" alt="" coords="159,45,333,72"/>
+<area shape="rect" id="node5" href="$keyboard_8h.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="unsubcribes keyboard interrupts" alt="" coords="151,96,341,122"/>
+<area shape="rect" id="node6" href="$uart1_8h.html#a4a9cdabec950d2f4a183fbbcb8796e9d" title="Sends a byte through COM1." alt="" coords="203,146,289,173"/>
+<area shape="rect" id="node9" href="$uart1_8h.html#a35feb85059ed1343dfc5cdef902d6226" title="Set uart configuration whether is a sender or a receiver." alt="" coords="191,197,301,224"/>
+<area shape="rect" id="node10" href="$uart1_8h.html#aa12b7563cba242a7eefc7f1c74cd7483" title="subscribes uart interrupts" alt="" coords="175,248,317,274"/>
+<area shape="rect" id="node11" href="$uart1_8h.html#a1cb30315f505aa8c7dfaee157e4c0733" title="unsubcribes uart interrupts" alt="" coords="167,298,325,325"/>
+<area shape="rect" id="node3" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="539,49,637,76"/>
+<area shape="rect" id="node7" href="$uart1_8c.html#a2e6ab7377be0fd52e7cb7b7ec8dee859" title="Reads from uart port and saves it in data variable." alt="" coords="398,84,482,110"/>
+<area shape="rect" id="node8" href="$uart1_8c.html#a3f13867a2fd6446839995ea8841b8c5c" title="Writes data variable to uart port." alt="" coords="396,172,484,198"/>
+</map>

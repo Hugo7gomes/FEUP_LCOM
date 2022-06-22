@@ -1,0 +1,7 @@
+<map id="vg_draw_rectangle" name="vg_draw_rectangle">
+<area shape="rect" id="node1" title="Draws a filled rectangle whith selected color by changing the video RAM." alt="" coords="5,31,151,57"/>
+<area shape="rect" id="node2" href="$videoCard_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6" title="Draws a horizontal line with selected color by changing the video RAM." alt="" coords="199,31,315,57"/>
+<area shape="rect" id="node3" href="$videoCard_8c.html#a6091a4bd04596e6e8e39b7dee1e1b118" title="Draws a pixel with selected color by changing the video RAM." alt="" coords="363,31,448,57"/>
+<area shape="rect" id="node4" href="$videoCard_8c.html#ad3023ce61dfc722b9b9eb2b1af09cf1a" title="returns horizontal resolution" alt="" coords="496,5,575,32"/>
+<area shape="rect" id="node5" href="$videoCard_8c.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="496,56,575,83"/>
+</map>

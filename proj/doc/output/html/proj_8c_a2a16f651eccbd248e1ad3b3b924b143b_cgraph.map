@@ -1,0 +1,52 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,917,128,944"/>
+<area shape="rect" id="node2" href="$loopFuncs_8h.html#a56a4c88966159c3f2eedead5470a0edf" title="the loop function of tha main machine" alt="" coords="181,613,268,640"/>
+<area shape="rect" id="node48" href="$loopFuncs_8h.html#a56221c1ba8230657c3c48aaa9cbae7f5" title="the loop function of the second machine (sender)" alt="" coords="176,1171,273,1197"/>
+<area shape="rect" id="node3" href="$keyboard_8h.html#add466516506fbc3cd7ead7cfa0de38f7" title="inserts the character corresponding to the key pressed into an array" alt="" coords="335,765,454,792"/>
+<area shape="rect" id="node4" href="$videoCard_8h.html#a74194fef9792053f4ae348beb493516c" title="Sets all video_buffer pixels to zero (black)." alt="" coords="345,816,444,843"/>
+<area shape="rect" id="node5" href="$videoCard_8h.html#a56c5cf8a568cff737ff95520cbe6b405" title="copies video_buffer(auxiliar buffer) to video RAM buffer." alt="" coords="367,867,422,893"/>
+<area shape="rect" id="node6" href="$videoCard_8h.html#ac9243d68ee3f2746e9ae726096412554" title="draws the pixMap in the screen with selected color" alt="" coords="519,309,704,336"/>
+<area shape="rect" id="node10" href="$videoCard_8h.html#ada5ce0998b6f28a748f9210f9ba3f385" title="draws mouse pixMap ignoring background pixels" alt="" coords="322,277,467,304"/>
+<area shape="rect" id="node11" href="$videoCard_8h.html#a3d80129e63fc6e9c09d37f9a834864e3" title="releases video_buffer memory" alt="" coords="321,917,468,944"/>
+<area shape="rect" id="node12" href="$mouse_8h.html#a544605d59074cb40fe7709b39aeb0f1e" title="Get the Xpos of the mouse." alt="" coords="357,68,432,95"/>
+<area shape="rect" id="node13" href="$mouse_8h.html#a86adc20c1b2de8853ed4d626f134ec12" title="Get the Ypos of the mouse." alt="" coords="357,119,432,145"/>
+<area shape="rect" id="node14" href="$keyboard_8h.html#a67909c373d5177e1cb9f025bbfc575c0" title="reads scancodes" alt="" coords="343,613,446,640"/>
+<area shape="rect" id="node18" href="$mouse_8h.html#a239d775049c454a0d8dac16df8d7751c" title="handles the movement of the mouse and the buttons of the menu" alt="" coords="331,220,459,247"/>
+<area shape="rect" id="node23" href="$xpms_8h.html#a1ea00cd99647a7729a8f6c39a4e74546" title="loads all xpms into a memory buffer" alt="" coords="351,335,438,361"/>
+<area shape="rect" id="node25" href="$xpms_8h.html#a05b2c5e4dbcaffa701703b50a2111783" title="Reads a xpm." alt="" coords="351,169,438,196"/>
+<area shape="rect" id="node26" href="$interrupts_8h.html#a129a516686138e44517987974ee27cb0" title="subscribes all devices" alt="" coords="344,715,445,741"/>
+<area shape="rect" id="node31" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title=" " alt="" coords="326,512,463,539"/>
+<area shape="rect" id="node32" href="$uart1_8h.html#a39d4d8382fcef86119655409e25c0486" title="Receives a byte through COM1." alt="" coords="343,1171,446,1197"/>
+<area shape="rect" id="node34" href="$uart1_8h.html#a35feb85059ed1343dfc5cdef902d6226" title="Set uart configuration whether is a sender or a receiver." alt="" coords="339,1272,450,1299"/>
+<area shape="rect" id="node36" href="$interrupts_8h.html#a9cdcd223436a615be522bd7b6e6ae946" title="unsubscribes all devices" alt="" coords="336,664,453,691"/>
+<area shape="rect" id="node41" href="$videoCard_8h.html#adff9a72586cfe5f82987931ab94f2244" title="Draws menu rectangle, buttons and text." alt="" coords="338,436,451,463"/>
+<area shape="rect" id="node44" href="$videoCard_8h.html#aa6c1ff5024cd4d15e476bce487584daa" title="Initializes the video module in graphics mode." alt="" coords="361,563,428,589"/>
+<area shape="rect" id="node47" href="$mouse_8h.html#aa4f4b79245304da9acc07cb97e98ee8d" title="sends a command to the mouse" alt="" coords="331,1019,458,1045"/>
+<area shape="rect" id="node7" href="$videoCard_8c.html#a6091a4bd04596e6e8e39b7dee1e1b118" title="Draws a pixel with selected color by changing the video RAM." alt="" coords="761,360,847,387"/>
+<area shape="rect" id="node8" href="$videoCard_8c.html#ad3023ce61dfc722b9b9eb2b1af09cf1a" title="returns horizontal resolution" alt="" coords="901,385,980,412"/>
+<area shape="rect" id="node9" href="$videoCard_8c.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="901,461,980,488"/>
+<area shape="rect" id="node15" href="$keyboard_8c.html#add466516506fbc3cd7ead7cfa0de38f7" title="inserts the character corresponding to the key pressed into an array" alt="" coords="552,664,671,691"/>
+<area shape="rect" id="node16" href="$keyboard_8c.html#a1ba896157528456bcc6c82d7856f5eb4" title="keyboard interrupt handler" alt="" coords="561,715,662,741"/>
+<area shape="rect" id="node17" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="755,1069,853,1096"/>
+<area shape="rect" id="node19" href="$videoCard_8h.html#ad3023ce61dfc722b9b9eb2b1af09cf1a" title="returns horizontal resolution" alt="" coords="572,107,651,133"/>
+<area shape="rect" id="node20" href="$videoCard_8h.html#acc9f6aa0262b3700eaca672dbb7248a9" title="returns vertical resolution" alt="" coords="572,5,651,32"/>
+<area shape="rect" id="node21" href="$mouse_8c.html#accd9686e27654f5a9b3d39386493bc0c" title="handles the information contained in the 3 bytes from the mouse and puts the information inside the p..." alt="" coords="560,56,663,83"/>
+<area shape="rect" id="node22" href="$mouse_8c.html#aed4404005e4c565ac36656307386e0ac" title=" " alt="" coords="569,208,654,235"/>
+<area shape="rect" id="node24" href="$xpms_8c.html#a05b2c5e4dbcaffa701703b50a2111783" title="Reads a xpm." alt="" coords="568,259,655,285"/>
+<area shape="rect" id="node27" href="$keyboard_8h.html#a178b1db0b319dccad2840cc3fd273132" title="subscribes keyboard interrupts" alt="" coords="524,1120,699,1147"/>
+<area shape="rect" id="node28" href="$mouse_8h.html#a20285aed4b3ef45812cd967532dd09db" title="subcribes mouse interrupts" alt="" coords="532,917,691,944"/>
+<area shape="rect" id="node29" href="$timer_8h.html#ac57a7e1140a7e00ad95ac5488d2a671b" title="subscribes timer interrupts" alt="" coords="536,867,687,893"/>
+<area shape="rect" id="node30" href="$uart1_8h.html#aa12b7563cba242a7eefc7f1c74cd7483" title="subscribes uart interrupts" alt="" coords="541,1171,682,1197"/>
+<area shape="rect" id="node33" href="$uart1_8c.html#a2e6ab7377be0fd52e7cb7b7ec8dee859" title="Reads from uart port and saves it in data variable." alt="" coords="569,1221,653,1248"/>
+<area shape="rect" id="node35" href="$uart1_8c.html#a3f13867a2fd6446839995ea8841b8c5c" title="Writes data variable to uart port." alt="" coords="567,1284,655,1311"/>
+<area shape="rect" id="node37" href="$keyboard_8h.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="unsubcribes keyboard interrupts" alt="" coords="516,968,707,995"/>
+<area shape="rect" id="node38" href="$mouse_8h.html#acc3d97e33f3dea8c4b626cac59e5d5a4" title="unsubcribes mouse interrupts" alt="" coords="524,816,699,843"/>
+<area shape="rect" id="node39" href="$timer_8h.html#afabd21de449be154dd65d5fdb2d8045d" title="unsubscribes timer interrupts" alt="" coords="528,765,695,792"/>
+<area shape="rect" id="node40" href="$uart1_8h.html#a1cb30315f505aa8c7dfaee157e4c0733" title="unsubcribes uart interrupts" alt="" coords="533,1019,690,1045"/>
+<area shape="rect" id="node42" href="$videoCard_8c.html#a8cb4c0ecc241678fa38a1f8c304ed012" title="draws the pixMap in the screen" alt="" coords="560,360,663,387"/>
+<area shape="rect" id="node43" href="$videoCard_8c.html#a99d2da2559e11200c6b40c469e9977ec" title="Draws a filled rectangle whith selected color by changing the video RAM." alt="" coords="539,461,684,488"/>
+<area shape="rect" id="node45" href="$videoCard_8c.html#ac25d63be854025a8dcbaf192aeb4a23c" title="returns bits per pixel" alt="" coords="548,613,675,640"/>
+<area shape="rect" id="node46" href="$videoCard_8c.html#aab6f118e02871748b081e026424509c2" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="550,563,673,589"/>
+<area shape="rect" id="node49" href="$keyboard_8h.html#a09bd29e2cd75939aa99c0c6c02b108ce" title="keyboard interrupt handler" alt="" coords="344,1373,445,1400"/>
+<area shape="rect" id="node50" href="$uart1_8h.html#a4a9cdabec950d2f4a183fbbcb8796e9d" title="Sends a byte through COM1." alt="" coords="351,1323,438,1349"/>
+</map>

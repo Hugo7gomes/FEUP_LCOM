@@ -1,0 +1,6 @@
+<map id="interruptsKB" name="interruptsKB">
+<area shape="rect" id="node1" title="reads scancodes" alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#add466516506fbc3cd7ead7cfa0de38f7" title="inserts the character corresponding to the key pressed into an array" alt="" coords="156,5,275,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a1ba896157528456bcc6c82d7856f5eb4" title="keyboard interrupt handler" alt="" coords="165,56,266,83"/>
+<area shape="rect" id="node4" href="$utils_8h.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="reads 8 bits from the port" alt="" coords="323,56,421,83"/>
+</map>

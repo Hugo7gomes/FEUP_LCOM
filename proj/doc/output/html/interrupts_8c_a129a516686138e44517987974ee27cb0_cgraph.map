@@ -1,0 +1,7 @@
+<map id="subscribeAll" name="subscribeAll">
+<area shape="rect" id="node1" title="subscribes all devices" alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node2" href="$keyboard_8h.html#a178b1db0b319dccad2840cc3fd273132" title="subscribes keyboard interrupts" alt="" coords="155,5,329,32"/>
+<area shape="rect" id="node3" href="$mouse_8h.html#a20285aed4b3ef45812cd967532dd09db" title="subcribes mouse interrupts" alt="" coords="163,56,321,83"/>
+<area shape="rect" id="node4" href="$timer_8h.html#ac57a7e1140a7e00ad95ac5488d2a671b" title="subscribes timer interrupts" alt="" coords="167,107,317,133"/>
+<area shape="rect" id="node5" href="$uart1_8h.html#aa12b7563cba242a7eefc7f1c74cd7483" title="subscribes uart interrupts" alt="" coords="171,157,313,184"/>
+</map>
