@@ -1,6 +1,6 @@
 # LCOM Project
 
-LCOM Project for group T02G02;.
+LCOM Project for group T02G02
 
 Group members:
 
